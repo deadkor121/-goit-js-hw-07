@@ -27,3 +27,30 @@ const images = [
       alt: 'Zebras on Zebra',
     },
   ];
+  const gallery = document.querySelector(".gallery");
+
+  // Створення елементів галереї на основі масиву даних
+  const createGallery = (images) => {
+    const elements = images.map((image) => {
+      const li = document.createElement("li");
+      const img = document.createElement("img");
+      img.src = image.url;
+      img.alt = image.alt;
+      li.appendChild(img);
+      return li;
+    });
+    return elements;
+  };
+  
+  // Додавання елементів галереї в DOM
+  const addGalleryToDOM = (elements) => {
+    const fragment = document.createDocumentFragment();
+    elements.forEach((element) => {
+      fragment.appendChild(element);
+    });
+    gallery.appendChild(fragment);
+  };
+  
+  // Створення галереї та додавання її в DOM
+  const galleryElements = createGallery(images);
+  addGalleryToDOM(galleryElements);
