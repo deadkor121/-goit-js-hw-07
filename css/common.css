@@ -55,7 +55,7 @@ li {
 .item li:last-child {
   margin-bottom: 0;
 }
-
+/*================================-task-2=====================*/
 .gallery {
   max-width: 1128px;
   margin: 0 auto;
@@ -71,29 +71,111 @@ li {
   display: block;
 }
 
+/*===================================-task-3=======================*/
+#name-input {
+  width: 360px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+/*==============================task-4=============================*/
 
-.label-form{
+.login-form {
+  width: 408px;
+  margin: 0 auto;
+  padding: 24px;
+  color: #2e2f42;
+  font-family: Montserrat;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  border-radius: 8px;
+  background: #fff;
+}
+
+.login-form label {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 8px;
-  color: #2E2F42;
-
-font-family: "Montserrat";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0.64px;
-  margin-top: 8px-;
-
-
 }
-.input-form{
-width: 360px;
-height: 40px;
 
+.login-form label:first-child {
+  margin-bottom: 8px;
 }
+
+.login-form input {
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+.login-form input:hover {
+  border: 1px solid #000;
+}
+
+.login-form input:active {
+  color: #2e2f42;
+  font-family: Montserrat;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.login-form button {
+  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #4e75ff;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  font-family: Montserrat;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.login-form button:hover {
+  background: #6c8cff;
+}
+/*=====================-task-5=========================*/
+
+.widget {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 100px 88px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.widget p {
+  margin: 0 0 16px 0;
+  padding: 0;
+  color: #2e2f42;
+  font-family: Montserrat;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.color {
+}
+.change-color {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 16px;
+  color: #fff;
+  font-family: Montserrat;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  cursor: pointer;
+}
+/*====================================*/
+
+
 .button-form{
   background: #4e75ff;
   border-color: #4E75FF;
@@ -128,4 +210,69 @@ font-style: normal;
 font-weight: 500;
 line-height: 24px;
 letter-spacing: 0.64px;
+}
+
+#controls{
+  display: flex;
+  padding: 32px;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+  background: #ffff;
+  width: 422px;
+  height: 40px;
+  background-color: #F6F6FE;
+}
+
+#boxes{
+  display: flex;
+}
+
+.controls-input{
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #808080;
+  border-width: 1px;
+  padding: 8px 72px 8px 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+
+.button-create{
+  color: #ffff;
+  background: #4e75ff;
+  border-color: #4E75FF;
+  border-radius: 8px;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 120px;
+  position: relative;
+  font-family: "Montserrat";
+}
+
+.button-destroy{
+  background: #ff4e4e;
+  border-color: #ff4e4e;
+  color:#ffff;
+  border-radius: 8px;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 120px;
+  font-family:  "Montserrat";
 }
